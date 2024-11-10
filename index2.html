@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form.saylani.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images.jpeg" type="image/x-icon">
+</head>
+<body class="main-body">
+   <div  class="headimg" > <img class="col-9" src="Capture.PNG" alt=""> 
+</div>
+  <!-- tab start  -->
+<div class=" tab" style="border-radius: 50px;">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Download ID Card</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Result</a>
+        </li>
+      </ul>
+    </div>
+    <hr class="hr">
+    <!-- tab end  -->
+
+    <div class="mainform">
+
+        <div class="container">
+
+            <!-- First Row -->
+            <div class="row mb-3">
+                <div class="col-6">
+                    <select name="country" id="country" class="form-select">
+                        <option selected disabled>Select Country</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Turkey">Turkey</option>
+                    </select>
+                </div>
+        
+                <div class="col-6">
+                    <select name="City" id="City" class="form-select">
+                        <option selected disabled>Select City</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Quetta">Quetta</option>
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Lahore">Lahore</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Second Row -->
+            <div class="row mb-3">
+                <div class="col-6">
+                    <select  name="Course" id="Course" class="form-select" required>
+                        <option selected disabled>Select Course</option>
+                        <option value="Web">Web and App Development</option>
+                        <option value="Graphic">Graphic</option>
+                        <option value="Devops">Devops</option>
+                        <option value="Cloud Data">Cloud Data</option>
+                    </select>
+                </div>
+        
+                <div class="col-6">
+                    <select name="skill" id="skill" class="form-select" required>
+                        <option selected disabled>Select Computer Proficiency</option>
+                        <option value="None">None</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advance">Advance</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Third Row -->
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                </div>
+            
+
+                <div class="col-6">
+                    <input type="text" id="fname" class="form-control" placeholder="Father Name" required>
+                </div>
+            </div>
+            
+        
+            <!-- Fourth Row -->
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input type="text" id="mail" class="form-control" placeholder="Email" required>
+                </div>
+            
+
+                <div class="col-6">
+                    <input type="text" id="phone" class="form-control" placeholder="Phone" required>
+                </div>
+            </div>
+            <!-- fifth  -->
+
+
+            <div class="row mb-3">
+                <div class="col-6">
+                    <input type="text" id="cnic" class="form-control" placeholder="CNIC" required>
+                </div>
+            
+
+                <div class="col-6">
+                    <input type="text" id="fcnic" class="form-control" placeholder="Father CNIC (Optional)">
+                </div>
+            </div>
+
+           <!-- sixth  -->
+           <div class="row mb-3">
+
+            <div class="col-6">
+                <input type="date" id="date" class="form-control" placeholder="mm/dd/yyyy" required>
+            </div>
+
+            <div class="col-6">
+                <select name="gender" id="gender" class="form-select" required>
+                    <option selected disabled>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="Female">Female</option>
+                    
+                </select>
+            </div>
+          </div>
+
+<!-- seventh  -->
+<div class="row mb-3">
+ <div class="col-12">
+                <input type="text" id="address" class="form-control" placeholder="Address">
+            </div>
+        </div>
+        <!-- eight  -->
+         <div class="row mb-3">
+            <div class="col-12">
+                <select  class="form-select"  name="qualification" id="qualification" required>
+                    <option selected disabled value="lastqualification">last Qualification</option>
+                    <option value="Matric">Matriculation</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Beachelors">Beachelors</option>
+                </select>
+            </div>
+         </div>
+
+         <!-- nine  -->
+
+         <div class="row mb-3">
+            <div class="col-12">
+                <select class="form-select"  name="havelaptop" id="havelaptop">
+                    <option selected disabled value="do you have laptop?">do you have laptop?</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    
+                </select>
+            </div>
+         </div>
+
+         <!-- upload  -->
+          <div class="row">
+         <div class="mb-3 col-lg-6 col-sm-12">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+          </div>
+<div class="col-lg-6 col-sm-12 " id="uploadlist">
+    <ul  class="list-unstyled" id="uploadlist">
+        <li>With white or blue background</li>
+        <li>File size must be less than 1MB</li>
+        <li>File type: jpg, jpeg, png</li>
+        <li>Upload your recent passport size picture</li>
+        <li>Your Face should be clearly visible without any Glasses</li>
+    </ul>
+
+    
+</div>
+</div>
+<hr class="hr">
+<!-- end data  -->
+ <div class="row">
+    <div class="mb-3 col-12 " id="">
+        <ol  class="" id="">
+            <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+            <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
+            <li>Defiance will render my admission canceled at any point in time.
+            </li>
+            <li>Upon completion, of the course, I will complete the required project by SWIT.
+            </li>
+            <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+        </ol>
+    </div>
+    
+ </div>
+
+
+ <div class="d-grid gap-2">
+    <button onclick="Submit()" class="btn btn-primary" type="button">Submit</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    <!-- main ennd  -->
+       </div>
+    
+    
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="app2.js"></script>
+</body>
+</html>
